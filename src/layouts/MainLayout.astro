@@ -1,0 +1,21 @@
+---
+import MainHead from "./MainHead.astro";
+import Nav from "../components/Nav.astro";
+
+const  { title, seoTitle, seoDesc } = Astro.props;
+---
+
+
+<html>
+    <MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
+    <body class="bg-slate-900 text-white">
+        <Nav />
+        <slot />
+        <style>
+            body {
+                font-family: "Protest Strike", sans-serif;
+                min-height: 100vh;
+            }
+        </style>
+    </body>
+</html>

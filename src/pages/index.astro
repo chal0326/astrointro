@@ -1,16 +1,14 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro"
+const name ="Cody";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout 
+title="Cody L. Hall Portfolio Site" 
+seoTitle="Cody L. Hall, photographer, develooper, portfolio gallery and resume" 
+seoDesc="Portfolio made using Astro">
+	<div class="w-8/12 md:w-6/12 mx-auto">
+	<h1 class="text-5xl md:text-6xl text-center">Hey 👋, I am Cody L. Hall
+		</h1></div>
+</MainLayout>
+	
