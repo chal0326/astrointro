@@ -10,5 +10,43 @@ seoDesc="Portfolio made using Astro">
 	<div class="w-8/12 md:w-6/12 mx-auto">
 	<h1 class="text-5xl md:text-6xl text-center">Hey 👋, I am Cody L. Hall
 		</h1></div>
+		<div id="typed-strings">
+		<p>I am a</p>
+		<p>👁️Visual Artist</p>
+		<p>📸Photographer</p>
+		<p>💻Coder</p>
+		<p>🖼Digital Media Manager</p> 
+		<p>📐Designer</p>
+		<p>👯Best Friend</p>
+		<p>📈Marketer</p>
+		<p>🔨 Maker</p>
+		<p>🏙 New Yorker</p>
+		<p>🗿3D Modeler</p>
+		<p>🧑‍🎨Painter</p>
+		<p>👪 Son</p>
+		<p>🕵Investigator</p>
+		<p>🎭Collector</p>
+		<p>💁Younger Brother</p>	
+		</div>
+		<div class="text-center mt-6"><span id="typed"></span></div>
 </MainLayout>
-	
+<style>
+	p.graphic {
+                font-family: "Honk", system-ui;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                     "MORF" 15,
+                     "SHLN" 50;
+            }
+</style>
+<script>
+	import Typed from "typed.js";
+
+	var typed = new Typed("#typed", {
+		stringsElement: "#typed-strings",
+		typeSpeed: 50,
+		loop: true,
+	});
+</script>
