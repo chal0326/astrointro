@@ -1,6 +1,13 @@
-<div class="parallax-container">
-    <div class="layer background" style="background-image: url('/public/assets/background.png');"></div>
-    <div class="layer midground" style="background-image: url('/public/assets/midground.png');"></div>
-    <div class="layer foreground" style="background-image: url('/public/assets/foreground.png');"></div>
-  </div>
+---
+import 'tailwindcss/tailwind.css';
+import "../parallax.jsx"
+---
+
+<Parallax />
+<div class="relative overflow-hidden h-screen">
+  <div id="background" class="absolute w-full h-full" style="background-image: url('/assets/background.jpg'); background-size: cover; z-index: 1;"></div>
+  <div id="midground" class="absolute w-full h-full" style="background-image: url('/assets/midground.png'); background-size: cover; z-index: 2;"></div>
+  <div id="foreground" class="absolute w-full h-full" style="background-image: url('/assets/foreground.png'); background-size: cover; z-index: 3;"></div>
+</div>
+</Parallax>
   
