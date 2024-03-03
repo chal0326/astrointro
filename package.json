@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@qwikdev/astro": "^0.5.7",
     "astro": "^4.4.0",
     "astro-integration-lottie": "^0.2.3",
     "astro-navbar": "^2.3.1",
