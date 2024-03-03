@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Project 1",
+        "description": "This is a brief description of my first project.",
+        "imageUrl": "/path/to/project1/image.jpg"
+    },
+    {
+        "title": "Project 2",
+        "description": "This is a brief description of my second project.",
+        "imageUrl": "/path/to/project2/image.jpg"
+    }
+  
+]
