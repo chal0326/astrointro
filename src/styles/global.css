@@ -1,0 +1,24 @@
+
+.button1 {
+    background-color: #ee0c40;
+    border: 2px solid #ee0c40;
+	border-radius: 0;
+	box-shadow: none;
+	width: 8rem; /* adjust as required */
+	height: 4rem; /* adjust as required */
+	transition: transform 300ms ease-out;
+}
+
+.button1:hover {
+    background: #ee0c40;
+    border: 2px solid #ee0c40;
+	border-radius: 0;
+	box-shadow: -5px 5px 0px hsl(346.1946902654867deg 90.39999999999999% 15% / 1);
+	transform: translate(5px, -5px);
+}
+
+.button1:disabled {
+    background-color: hsl(346.1946902654867deg 15% 49.01960784313726%);
+	border-radius: 0;
+    color: white
+}

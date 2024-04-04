@@ -1,0 +1,13 @@
+---
+interface Props {
+    src: string;
+    width: string;
+    height: string;
+    id: string;
+}
+
+const { src, width='100%', height, id='iframediv' } = Astro.props;
+---
+<div class="ChartCard flex bg-white rounded-lg shadow-lg p-4">
+    <iframe src={src} width={width} height={height} id={id}></iframe>
+</div>

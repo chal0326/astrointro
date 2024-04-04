@@ -1,0 +1,67 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import MainHead from '../layouts/MainHead.astro';
+import ChartCards from '../components/ChartCards.astro';
+---
+<MainLayout>
+  <MainHead title="US Data Charts"
+    description="US Data Charts"
+    keywords="US Data Charts"
+  />  
+    <body> 
+  <h2>Life Expectancy</h2>
+  <ChartCards src = "https://data.worldbank.org/share/widget?end=2021&indicators=SP.DYN.LE00.IN&locations=US&start=1960&view=chart" width = "100%" height = 533 id = "iframediv" />;
+<h2>Labor Participation Rate</h2>
+<ChartCards  src="https://data.worldbank.org/share/widget?contextual=default&indicators=SL.TLF.CACT.NE.ZS&locations=US" width = "100%" height = 533 id = "iframediv" />;
+<ChartCards  src="https://data.worldbank.org/share/widget?indicators=SL.TLF.CACT.FE.ZS&locations=US-IL-PS" width="100%" height="533" id="iframediv"/>;
+<ChartCards  src="https://data.worldbank.org/share/widget?indicators=SL.TLF.CACT.MA.NE.ZS&locations=US-IL-PS" width="100%" height="533" id="iframediv"/>;  
+
+    <h2>Net Migration</h2>
+
+    <iframe
+      src="https://data.worldbank.org/share/widget?indicators=SM.POP.NETM&locations=US"
+      width="450"
+      height="533"
+       ></iframe>
+
+    <h2>Gov Debt as % of GDP</h2>
+
+    <iframe
+      src="https://data.worldbank.org/share/widget?indicators=GC.DOD.TOTL.GD.ZS&locations=US"
+      width="450"
+      height="533"
+
+    
+    ></iframe>
+
+    <h2>Income share by lowest 20%</h2>
+
+    <iframe
+      src="https://data.worldbank.org/share/widget?indicators=SI.DST.FRST.20&locations=US"
+      width="450"
+      height="533"
+
+     
+    ></iframe>
+
+    <h2>Urban Population</h2>
+
+    <iframe
+      src="https://data.worldbank.org/share/widget?indicators=SP.URB.TOTL.IN.ZS&locations=US"
+      width="100%"
+      height="533"
+
+      
+    ></iframe>
+    </body>
+</MainLayout>
+<script>
+  // Selecting the iframe element
+  var iframe = document.getElementById("iframediv");
+  
+  // Adjusting the iframe height onload event
+  iframe.onload = function(){
+      const iframe = document.getElementById("iframediv") as HTMLIFrameElement;
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  }
+  </script>

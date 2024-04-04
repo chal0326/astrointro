@@ -1,9 +1,9 @@
 ---
 import 'tailwindcss/tailwind.css';
-
+import { astroImageTools } from "astro-imagetools";
 ---
 
-<div class="relative overflow-hidden w-8/12 h-screen md:w-6/12">
+<div class="relative overflow-hidden w-full min-h-400px h-screen">
   <div id="background" class="absolute w-full h-[95%]" style="background-image: url('/assets/background.png'); background-size: cover; z-index: 1;"></div>
   <div id="midground" class="absolute w-full h-[90%]" style="background-image: url('/assets/midground.png'); background-size: cover; z-index: 2;"></div>
   <div id="foreground" class="absolute w-full h-[90%]" style="background-image: url('/assets/foreground.png'); background-size: cover; z-index: 3;"></div>
