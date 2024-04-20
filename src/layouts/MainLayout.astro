@@ -9,6 +9,7 @@ const  { title, seoTitle, seoDesc } = Astro.props;
 
 <html>
     <MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
+    <link rel="stylesheet" href="/node_modules/atropos/atropos.css">
     <body class="bg-slate-900 text-white grid gap-0">
         <Nav />
         <slot />
