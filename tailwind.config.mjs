@@ -4,8 +4,21 @@ import ui from "franken-ui";
 import hooks from "franken-ui/shadcn-ui/hooks";
 
 const shadcn = hooks();
+const { nextui } = require("@nextui-org/react");
 
 /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // ...
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: {
+    extend: {},
+  },
+  darkMode: "class",
+  plugins: [nextui()]
+};
+
 export default {
   presets: [preset],
   safelist: [
